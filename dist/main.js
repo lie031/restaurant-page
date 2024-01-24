@@ -1,1 +1,1 @@
-console.log("hello");
+(()=>{const e=document.querySelector("#content"),t=document.createElement("img"),n=document.createElement("div"),c=document.createElement("button");t.src="/dist/img/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg",t.setAttribute("width","auto"),t.setAttribute("height","200px"),n.textContent="Best burgers in the country",c.textContent="Menu",e.appendChild(t),e.appendChild(n),e.appendChild(c)})();

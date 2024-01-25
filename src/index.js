@@ -1,14 +1,24 @@
-const content = document.querySelector("#content");
-const burgerImg = document.createElement("img");
-const text = document.createElement("div");
-const Btn = document.createElement("button");
-burgerImg.src = "/dist/img/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg";
-burgerImg.setAttribute("width","auto");
-burgerImg.setAttribute("height","200px");
+import aboutLoader from "./about";
+import homeLoad from "./home";
+import menuLoader from "./menu";
+homeLoad();
 
-text.textContent= "Best burgers in the country";
-Btn.textContent= "Menu";
+const content = document.querySelector("#content")
+const menuBtn = document.querySelector('.menu-btn');
+const homeBtn = document.querySelector('.home-btn');
+const aboutBtn = document.querySelector('.about-btn')
 
-content.appendChild(burgerImg);
-content.appendChild(text);
-content.appendChild(Btn);
+homeBtn.addEventListener('click',()=>{
+    content.innerHTML="";
+    homeLoad();
+})
+
+menuBtn.addEventListener("click",()=>{
+    content.innerHTML= "";
+    menuLoader();
+});
+
+aboutBtn.addEventListener("click",()=>{
+    content.innerHTML= "";
+    aboutLoader();
+});

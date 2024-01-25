@@ -8,6 +8,7 @@ body{
     background-repeat: none;
     background-size: cover;
     background-position: center;
+
 }
 
 header{
@@ -43,12 +44,15 @@ header{
 }
 
 #content{
-    margin: 10px 300px;
     height: fit-content;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
     align-items: center;
+    justify-content: center;
     font-size: 30px;
     font-weight: 700;
     background: rgb(255, 255, 255,0.3);
@@ -64,6 +68,11 @@ header{
     color: white;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#content>img{
+    width: 300px;
+    height: auto;
 }
 
 

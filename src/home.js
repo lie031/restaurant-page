@@ -1,12 +1,12 @@
 import menuLoader from "./menu";
-import burger from './img/burgerImg.jpg';
+import burgerlol from './img/burgerlol.jpg';
 
 function homeLoad(){
     const content = document.querySelector("#content");
     const burgerImg = document.createElement("img");
     const text = document.createElement("div");
     const Btn = document.createElement("button");
-    burgerImg.src = burger;
+    burgerImg.src = burgerlol;
     burgerImg.setAttribute("width","auto");
     burgerImg.setAttribute("height","200px");
 

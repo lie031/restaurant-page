@@ -1,3 +1,7 @@
+import normalImg from './img/normalburger.png';
+import specialImg from './img/specialburger.png';
+import megaImg from './img/megaburger.webp'
+
 export default function menuLoader(){
     const content = document.querySelector("#content");
     const container = document.createElement('div');
@@ -7,7 +11,7 @@ export default function menuLoader(){
     normaltitle.textContent= "normal - 5$";
     normaltitle.classList.add("titlemenu");
     const normalburger = document.createElement('img');
-    normalburger.src = "./dist/img/normalburger.png";
+    normalburger.src = normalImg;
     normalburger.style.width = "300px";
     normalburger.style.height = "auto";
     normal.appendChild(normaltitle);
@@ -18,7 +22,7 @@ export default function menuLoader(){
     specialtitle.textContent = "special - 10$";
     specialtitle.classList.add("titlemenu");
     const specialburger = document.createElement('img');
-    specialburger.src = './dist/img/specialburger.png';
+    specialburger.src = specialImg;
     specialburger.style.width = "300px";
     specialburger.style.height = "auto";
     special.appendChild(specialtitle);
@@ -29,7 +33,7 @@ export default function menuLoader(){
     megatitle.textContent = "mega - 15$";
     megatitle.classList.add("titlemenu");
     const megaburger = document.createElement('img');
-    megaburger.src = './dist/img/megaburger.webp';
+    megaburger.src = megaImg;
     megaburger.style.width = "300px";
     megaburger.style.height = "auto";
     mega.appendChild(megatitle);

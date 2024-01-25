@@ -4,7 +4,6 @@ body{
     margin:0;
     padding: 0px;
     min-height: 100vh;
-    background-image: url(/src/img/image.webp);
     background-repeat: none;
     background-size: cover;
     background-position: center;
